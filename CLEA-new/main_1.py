@@ -127,6 +127,7 @@ def train():
 
             # if batch_target.__len__() < 2: continue
 
+            # batch_input_seq is input data.
             loss, _, (p1, p2, p3, p4), (real_rest_sum, real_rest_sum_int, all_sum, rest_ratio,repeat_ratio) = NB(temp, batch_userid,
                                                                                                      batch_input_seq,
                                                                                                      batch_target,
@@ -815,7 +816,7 @@ def train():
 
         logger.info('##############################################')
         return hit_ratio_5, recall_5, precision_5, f1_5, ndcg_5, mrr_5, avg_fake_basket_user_5, test_loss
-
+    # Code begins here.
     try:
         valid_hit_l = []
         valid_recall_l = []
@@ -826,7 +827,7 @@ def train():
         optimizer_dict = {}
         schedular_dict = {}
         optimizer_dict[2] = torch.optim.Adam([
-            {'params': NB.G2.parameters()},
+            {'params': NB.G2.parameters()},  # G2 is Generator2 which including GRU.
             {'params': NB.D.parameters()},
             {'params': NB.G0.parameters(), 'lr': Config().G1_lr}], lr=Config().learning_rate,
                                              weight_decay=Config().weight_decay)
@@ -919,6 +920,7 @@ def train():
 
         ############################################
         temp0 = Config().temp_min
+        # The training code is here.
         for epoch in range(Config().before_epoch + 1, Config().epochs + 1):
             sd = Config().sd2
             save_flag = 0

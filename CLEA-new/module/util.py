@@ -250,10 +250,10 @@ def get_batch_TRAIN_DATASET(dataset, batch_size):
     random.shuffle(dataset)
     for idx, (UU, SS, TT, HH, NN, LL) in enumerate(dataset):
         userid = torch.tensor(UU, dtype=torch.long)
-        input_seq = torch.tensor(SS, dtype=torch.long)  
+        input_seq = torch.tensor(SS, dtype=torch.long)
         target = torch.tensor(TT, dtype=torch.long) 
         history = torch.from_numpy(np.array(HH)).float() 
-        neg_items = torch.tensor(NN, dtype=torch.long)  
+        neg_items = torch.tensor(NN, dtype=torch.long)
 
         if SS.__len__() < 2:
             continue

@@ -1,0 +1,437 @@
+2023-02-20 16:07:07.762: ******************************************************************************************************************************************************
+2023-02-20 16:07:07.762:  *************************************  model_1 *************************************** 
+2023-02-20 16:07:40.814: test user nums : 6198  valid user nums : 688
+2023-02-20 16:07:45.497: margin1=0.1
+2023-02-20 16:07:45.497: margin2=0.1
+2023-02-20 16:07:45.497: same_embedding=1
+2023-02-20 16:07:45.497: neg_margin=0.9
+2023-02-20 16:07:45.497: pos_margin=0.1
+2023-02-20 16:07:45.497: next_k=2
+2023-02-20 16:07:45.497: pretrain_h=2
+2023-02-20 16:07:45.497: soft=0
+2023-02-20 16:07:45.497: rnn=GRU
+2023-02-20 16:07:45.497: double=0
+2023-02-20 16:07:45.497: alternative_train_epoch_D=1
+2023-02-20 16:07:45.497: alternative_train_epoch_G2=1
+2023-02-20 16:07:45.497: clip_value=0.1
+2023-02-20 16:07:45.497: temp_learn=1
+2023-02-20 16:07:45.497: output_dir=./result
+2023-02-20 16:07:45.497: G1_lr=0.0001
+2023-02-20 16:07:45.497: distrisample=0
+2023-02-20 16:07:45.497: pretrain_epoch=20
+2023-02-20 16:07:45.497: to2=0
+2023-02-20 16:07:45.497: MODEL_DIR=./runs
+2023-02-20 16:07:45.497: input_dir=dataset/Instacart/user_date_tran_dict_new.txt
+2023-02-20 16:07:45.497: dataset=Instacart
+2023-02-20 16:07:45.497: epochs=10
+2023-02-20 16:07:45.497: device_id=0
+2023-02-20 16:07:45.497: log_interval=500
+2023-02-20 16:07:45.497: num_users=6886
+2023-02-20 16:07:45.497: num_product=8222
+2023-02-20 16:07:45.497: seed=24
+2023-02-20 16:07:45.497: test_ratio=100
+2023-02-20 16:07:45.497: log_fire=basemodel
+2023-02-20 16:07:45.497: test_type=1000
+2023-02-20 16:07:45.497: test_every_epoch=4
+2023-02-20 16:07:45.497: alternative_train_epoch=5
+2023-02-20 16:07:45.498: alternative_train_batch=1000
+2023-02-20 16:07:45.498: max_basket_size=35
+2023-02-20 16:07:45.498: max_basket_num=32
+2023-02-20 16:07:45.498: group_split1=4
+2023-02-20 16:07:45.498: group_split2=6
+2023-02-20 16:07:45.498: clip=0
+2023-02-20 16:07:45.498: batch_size=256
+2023-02-20 16:07:45.498: neg_ratio=1
+2023-02-20 16:07:45.498: judge_ratio=1
+2023-02-20 16:07:45.498: sd1=1
+2023-02-20 16:07:45.498: sd2=1
+2023-02-20 16:07:45.498: sd3=1
+2023-02-20 16:07:45.498: sd4=1
+2023-02-20 16:07:45.498: sd5=1
+2023-02-20 16:07:45.498: learning_rate=0.001
+2023-02-20 16:07:45.498: H_lr=1e-05
+2023-02-20 16:07:45.498: G2D_lr=0.0001
+2023-02-20 16:07:45.498: dropout=0.2
+2023-02-20 16:07:45.498: weight_decay=1e-05
+2023-02-20 16:07:45.498: basket_pool_type=avg
+2023-02-20 16:07:45.498: num_layer=1
+2023-02-20 16:07:45.498: embedding_dim=128
+2023-02-20 16:07:45.498: ANNEAL_RATE=0.0002
+2023-02-20 16:07:45.498: temp=1
+2023-02-20 16:07:45.498: temp_min=0.3
+2023-02-20 16:07:45.498: before_epoch=0
+2023-02-20 16:07:45.498: G1_flag=0
+2023-02-20 16:07:45.498: histroy=1
+2023-02-20 16:07:56.542: G1_flag 0 pretrain 0 temp 1 train_epoch 0  B 256 al_batch 1000 lr 0.001  temp0 0.3
+2023-02-20 16:07:56.678: [Training]| Epochs   1 | Batch     0  | ms/batch 0.00 | Loss 9.0195 | p1_Loss 9.0195 | p2_Loss 9.0195 | p3_Loss 9.0195 | p4_Loss 9.0195 | 
+2023-02-20 16:07:56.678: real_rest_sum 3008.0000 | real_rest_sum_int 3008.0000 | all_sum 3008.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-20 16:08:17.049: [Training]| Epochs   1 | Batch   500  | ms/batch 0.04 | Loss 7.9523 | p1_Loss 7.9523 | p2_Loss 7.9523 | p3_Loss 7.9523 | p4_Loss 7.9523 | 
+2023-02-20 16:08:17.050: real_rest_sum 25298.0000 | real_rest_sum_int 25298.0000 | all_sum 25298.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-20 16:08:36.266: [Training]| Epochs   1 | Batch  1000  | ms/batch 0.04 | Loss 7.5694 | p1_Loss 7.5694 | p2_Loss 7.5694 | p3_Loss 7.5694 | p4_Loss 7.5694 | 
+2023-02-20 16:08:36.266: real_rest_sum 11137.0000 | real_rest_sum_int 11137.0000 | all_sum 11137.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-20 16:08:56.627: [Training]| Epochs   1 | Batch  1500  | ms/batch 0.04 | Loss 7.5742 | p1_Loss 7.5742 | p2_Loss 7.5742 | p3_Loss 7.5742 | p4_Loss 7.5742 | 
+2023-02-20 16:08:56.627: real_rest_sum 10608.0000 | real_rest_sum_int 10608.0000 | all_sum 10608.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-20 16:09:12.060: [Training]| Epochs   1 | Batch  2000  | ms/batch 0.03 | Loss 7.5124 | p1_Loss 7.5124 | p2_Loss 7.5124 | p3_Loss 7.5124 | p4_Loss 7.5124 | 
+2023-02-20 16:09:12.060: real_rest_sum 24878.0000 | real_rest_sum_int 24878.0000 | all_sum 24878.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-20 16:09:30.546: [Training]| Epochs   1 | Batch  2500  | ms/batch 0.04 | Loss 7.2064 | p1_Loss 7.2064 | p2_Loss 7.2064 | p3_Loss 7.2064 | p4_Loss 7.2064 | 
+2023-02-20 16:09:30.546: real_rest_sum 24032.0000 | real_rest_sum_int 24032.0000 | all_sum 24032.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-20 16:09:34.269: batch_num: 2598
+2023-02-20 16:09:34.269: [Training]| Epochs   1 | loss_all  7.5414 | p1_all  7.5414 | p2_all  7.5414 | p3_all  7.5414 | p4_all  7.5414 | real_rest_ratio 1.0000 | repeat_ratio 1.0000 |
+2023-02-20 16:09:43.866: 1
+2023-02-20 16:09:43.866: valid_real_ratio_avg 1.0000 valid_neg_ratio_avg 1.0000 valid_repeat_ratio_avg 1.0000 valid_neg_repeat_ratio_avg 1.0000
+2023-02-20 16:09:43.866: [Validation] neg_sample TOP5 [Test]| Epochs   1 | Hit ratio 0.7355 | recall 0.1828 |  precision 0.3189 | f1  0.2051 | ndcg  0.3718 | mrr  0.5821 | have_fake_user 688 | avg_fake_length  5.0000 | all_valid_user_num  688
+2023-02-20 16:09:43.867: [Validation] p_n_score_differences_avg 0.0039 
+2023-02-20 16:09:43.867: ##############################################
+2023-02-20 16:10:05.028: 1
+2023-02-20 16:10:05.028: Epochs   1 topk   5  basket_length <4  num 714  Hit ratio 0.6148 | recall 0.2950 |  precision 0.2008 | f1  0.2166 | ndcg  0.3134 | mrr  0.4606 
+2023-02-20 16:10:05.029: Epochs   1 topk   5  basket_length 4<<6  num 1189  Hit ratio 0.6341 | recall 0.2100 |  precision 0.2313 | f1  0.2030 | ndcg  0.2949 | mrr  0.4984 
+2023-02-20 16:10:05.030: Epochs   1 topk   5  basket_length >6  num 4295  Hit ratio 0.8286 | recall 0.1899 |  precision 0.3966 | f1  0.2386 | ndcg  0.4463 | mrr  0.6874 
+2023-02-20 16:10:05.030: ...............................................
+2023-02-20 16:10:05.030: neg_sample TOP5 [Test]| Epochs   1 | Hit ratio 0.7667 | recall 0.2059 |  precision 0.3424 | f1  0.2292 | ndcg  0.4019 | mrr  0.6250| have_fake_user 6198 | avg_fake_length  5.0000 | all_test_user_num  6198
+2023-02-20 16:10:05.030: ##############################################
+2023-02-26 11:10:31.413: ******************************************************************************************************************************************************
+2023-02-26 11:10:31.413:  *************************************  model_1 *************************************** 
+2023-02-26 11:11:05.075: test user nums : 6198  valid user nums : 688
+2023-02-26 11:11:09.861: margin1=0.1
+2023-02-26 11:11:09.862: margin2=0.1
+2023-02-26 11:11:09.862: same_embedding=1
+2023-02-26 11:11:09.862: neg_margin=0.9
+2023-02-26 11:11:09.862: pos_margin=0.1
+2023-02-26 11:11:09.862: next_k=2
+2023-02-26 11:11:09.862: pretrain_h=2
+2023-02-26 11:11:09.862: soft=0
+2023-02-26 11:11:09.862: rnn=GRU
+2023-02-26 11:11:09.862: double=0
+2023-02-26 11:11:09.862: alternative_train_epoch_D=1
+2023-02-26 11:11:09.862: alternative_train_epoch_G2=1
+2023-02-26 11:11:09.862: clip_value=0.1
+2023-02-26 11:11:09.862: temp_learn=1
+2023-02-26 11:11:09.862: output_dir=./result
+2023-02-26 11:11:09.862: G1_lr=0.0001
+2023-02-26 11:11:09.862: distrisample=0
+2023-02-26 11:11:09.862: pretrain_epoch=20
+2023-02-26 11:11:09.862: to2=0
+2023-02-26 11:11:09.862: MODEL_DIR=./runs
+2023-02-26 11:11:09.862: input_dir=dataset/Instacart/user_date_tran_dict_new.txt
+2023-02-26 11:11:09.862: dataset=Instacart
+2023-02-26 11:11:09.862: epochs=10
+2023-02-26 11:11:09.862: device_id=0
+2023-02-26 11:11:09.862: log_interval=500
+2023-02-26 11:11:09.862: num_users=6886
+2023-02-26 11:11:09.862: num_product=8222
+2023-02-26 11:11:09.862: seed=24
+2023-02-26 11:11:09.862: test_ratio=100
+2023-02-26 11:11:09.862: log_fire=basemodel
+2023-02-26 11:11:09.862: test_type=1000
+2023-02-26 11:11:09.862: test_every_epoch=4
+2023-02-26 11:11:09.862: alternative_train_epoch=5
+2023-02-26 11:11:09.862: alternative_train_batch=1000
+2023-02-26 11:11:09.862: max_basket_size=35
+2023-02-26 11:11:09.862: max_basket_num=32
+2023-02-26 11:11:09.862: group_split1=4
+2023-02-26 11:11:09.862: group_split2=6
+2023-02-26 11:11:09.862: clip=0
+2023-02-26 11:11:09.862: batch_size=256
+2023-02-26 11:11:09.863: neg_ratio=1
+2023-02-26 11:11:09.863: judge_ratio=1
+2023-02-26 11:11:09.863: sd1=1
+2023-02-26 11:11:09.863: sd2=1
+2023-02-26 11:11:09.863: sd3=1
+2023-02-26 11:11:09.863: sd4=1
+2023-02-26 11:11:09.863: sd5=1
+2023-02-26 11:11:09.863: learning_rate=0.001
+2023-02-26 11:11:09.863: H_lr=1e-05
+2023-02-26 11:11:09.863: G2D_lr=0.0001
+2023-02-26 11:11:09.863: dropout=0.2
+2023-02-26 11:11:09.863: weight_decay=1e-05
+2023-02-26 11:11:09.863: basket_pool_type=avg
+2023-02-26 11:11:09.863: num_layer=1
+2023-02-26 11:11:09.863: embedding_dim=128
+2023-02-26 11:11:09.863: ANNEAL_RATE=0.0002
+2023-02-26 11:11:09.863: temp=1
+2023-02-26 11:11:09.863: temp_min=0.3
+2023-02-26 11:11:09.863: before_epoch=0
+2023-02-26 11:11:09.863: G1_flag=0
+2023-02-26 11:11:09.863: histroy=1
+2023-02-26 11:11:20.039: G1_flag 0 pretrain 0 temp 1 train_epoch 0  B 256 al_batch 1000 lr 0.001  temp0 0.3
+2023-02-26 11:11:20.169: [Training]| Epochs   1 | Batch     0  | ms/batch 0.00 | Loss 9.0195 | p1_Loss 9.0195 | p2_Loss 9.0195 | p3_Loss 9.0195 | p4_Loss 9.0195 | 
+2023-02-26 11:11:20.169: real_rest_sum 3008.0000 | real_rest_sum_int 3008.0000 | all_sum 3008.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:11:40.256: [Training]| Epochs   1 | Batch   500  | ms/batch 0.04 | Loss 7.9523 | p1_Loss 7.9523 | p2_Loss 7.9523 | p3_Loss 7.9523 | p4_Loss 7.9523 | 
+2023-02-26 11:11:40.256: real_rest_sum 25298.0000 | real_rest_sum_int 25298.0000 | all_sum 25298.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:11:59.418: [Training]| Epochs   1 | Batch  1000  | ms/batch 0.04 | Loss 7.5694 | p1_Loss 7.5694 | p2_Loss 7.5694 | p3_Loss 7.5694 | p4_Loss 7.5694 | 
+2023-02-26 11:11:59.419: real_rest_sum 11137.0000 | real_rest_sum_int 11137.0000 | all_sum 11137.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:12:19.766: [Training]| Epochs   1 | Batch  1500  | ms/batch 0.04 | Loss 7.5742 | p1_Loss 7.5742 | p2_Loss 7.5742 | p3_Loss 7.5742 | p4_Loss 7.5742 | 
+2023-02-26 11:12:19.766: real_rest_sum 10608.0000 | real_rest_sum_int 10608.0000 | all_sum 10608.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:12:39.205: [Training]| Epochs   1 | Batch  2000  | ms/batch 0.04 | Loss 7.5124 | p1_Loss 7.5124 | p2_Loss 7.5124 | p3_Loss 7.5124 | p4_Loss 7.5124 | 
+2023-02-26 11:12:39.205: real_rest_sum 24878.0000 | real_rest_sum_int 24878.0000 | all_sum 24878.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:12:59.143: [Training]| Epochs   1 | Batch  2500  | ms/batch 0.04 | Loss 7.2064 | p1_Loss 7.2064 | p2_Loss 7.2064 | p3_Loss 7.2064 | p4_Loss 7.2064 | 
+2023-02-26 11:12:59.144: real_rest_sum 24032.0000 | real_rest_sum_int 24032.0000 | all_sum 24032.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:13:03.018: batch_num: 2598
+2023-02-26 11:13:03.018: [Training]| Epochs   1 | loss_all  7.5414 | p1_all  7.5414 | p2_all  7.5414 | p3_all  7.5414 | p4_all  7.5414 | real_rest_ratio 1.0000 | repeat_ratio 1.0000 |
+2023-02-26 11:13:12.563: 1
+2023-02-26 11:13:12.564: valid_real_ratio_avg 1.0000 valid_neg_ratio_avg 1.0000 valid_repeat_ratio_avg 1.0000 valid_neg_repeat_ratio_avg 1.0000
+2023-02-26 11:13:12.564: [Validation] neg_sample TOP5 [Test]| Epochs   1 | Hit ratio 0.7355 | recall 0.1828 |  precision 0.3189 | f1  0.2051 | ndcg  0.3718 | mrr  0.5821 | have_fake_user 688 | avg_fake_length  5.0000 | all_valid_user_num  688
+2023-02-26 11:13:12.564: [Validation] p_n_score_differences_avg 0.0039 
+2023-02-26 11:13:12.564: ##############################################
+2023-02-26 11:13:33.223: 1
+2023-02-26 11:13:33.224: Epochs   1 topk   5  basket_length <4  num 714  Hit ratio 0.6148 | recall 0.2950 |  precision 0.2008 | f1  0.2166 | ndcg  0.3134 | mrr  0.4606 
+2023-02-26 11:13:33.225: Epochs   1 topk   5  basket_length 4<<6  num 1189  Hit ratio 0.6341 | recall 0.2100 |  precision 0.2313 | f1  0.2030 | ndcg  0.2949 | mrr  0.4984 
+2023-02-26 11:13:33.227: Epochs   1 topk   5  basket_length >6  num 4295  Hit ratio 0.8286 | recall 0.1899 |  precision 0.3966 | f1  0.2386 | ndcg  0.4463 | mrr  0.6874 
+2023-02-26 11:13:33.227: ...............................................
+2023-02-26 11:13:33.227: neg_sample TOP5 [Test]| Epochs   1 | Hit ratio 0.7667 | recall 0.2059 |  precision 0.3424 | f1  0.2292 | ndcg  0.4019 | mrr  0.6250| have_fake_user 6198 | avg_fake_length  5.0000 | all_test_user_num  6198
+2023-02-26 11:13:33.228: ##############################################
+2023-02-26 11:13:33.269: Save model as ./runs/base_model_Instacart_basemodel.pt
+2023-02-26 11:13:33.310: Save model as ./runs/model_1_Instacart_basemodel.pt
+2023-02-26 11:13:33.310: Epochs   1 best_hit 0.7667 best_recall 0.2059 best_precision 0.3424 best_f1 0.2292 best_ndcg 0.4019  best_mrr 0.6250 
+2023-02-26 11:13:33.310: Epochs   1 loss_all 7.5414 Hit ratio 0.7667 recall 0.2059 precision 0.3424 f1  0.2292 ndcg  0.4019 mrr  0.6250 avg_fake_length 5.0000
+2023-02-26 11:13:33.312: G1_flag 0 pretrain 0 temp 1 train_epoch 0  B 256 al_batch 1000 lr 0.001  temp0 0.3
+2023-02-26 11:13:33.511: [Training]| Epochs   2 | Batch     0  | ms/batch 0.00 | Loss 6.8929 | p1_Loss 6.8929 | p2_Loss 6.8929 | p3_Loss 6.8929 | p4_Loss 6.8929 | 
+2023-02-26 11:13:33.511: real_rest_sum 74563.0000 | real_rest_sum_int 74563.0000 | all_sum 74563.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:13:53.564: [Training]| Epochs   2 | Batch   500  | ms/batch 0.04 | Loss 6.6498 | p1_Loss 6.6498 | p2_Loss 6.6498 | p3_Loss 6.6498 | p4_Loss 6.6498 | 
+2023-02-26 11:13:53.564: real_rest_sum 58866.0000 | real_rest_sum_int 58866.0000 | all_sum 58866.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:14:14.351: [Training]| Epochs   2 | Batch  1000  | ms/batch 0.04 | Loss 6.3358 | p1_Loss 6.3358 | p2_Loss 6.3358 | p3_Loss 6.3358 | p4_Loss 6.3358 | 
+2023-02-26 11:14:14.351: real_rest_sum 51772.0000 | real_rest_sum_int 51772.0000 | all_sum 51772.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:14:34.366: [Training]| Epochs   2 | Batch  1500  | ms/batch 0.04 | Loss 7.6852 | p1_Loss 7.6852 | p2_Loss 7.6852 | p3_Loss 7.6852 | p4_Loss 7.6852 | 
+2023-02-26 11:14:34.366: real_rest_sum 4996.0000 | real_rest_sum_int 4996.0000 | all_sum 4996.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:14:53.408: [Training]| Epochs   2 | Batch  2000  | ms/batch 0.04 | Loss 7.1059 | p1_Loss 7.1059 | p2_Loss 7.1059 | p3_Loss 7.1059 | p4_Loss 7.1059 | 
+2023-02-26 11:14:53.408: real_rest_sum 11069.0000 | real_rest_sum_int 11069.0000 | all_sum 11069.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:15:13.149: [Training]| Epochs   2 | Batch  2500  | ms/batch 0.04 | Loss 6.6739 | p1_Loss 6.6739 | p2_Loss 6.6739 | p3_Loss 6.6739 | p4_Loss 6.6739 | 
+2023-02-26 11:15:13.149: real_rest_sum 39297.0000 | real_rest_sum_int 39297.0000 | all_sum 39297.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:15:17.088: batch_num: 2598
+2023-02-26 11:15:17.088: [Training]| Epochs   2 | loss_all  6.9094 | p1_all  6.9094 | p2_all  6.9094 | p3_all  6.9094 | p4_all  6.9094 | real_rest_ratio 1.0000 | repeat_ratio 1.0000 |
+2023-02-26 11:15:26.639: 1
+2023-02-26 11:15:26.640: valid_real_ratio_avg 1.0000 valid_neg_ratio_avg 1.0000 valid_repeat_ratio_avg 1.0000 valid_neg_repeat_ratio_avg 1.0000
+2023-02-26 11:15:26.640: [Validation] neg_sample TOP5 [Test]| Epochs   2 | Hit ratio 0.7413 | recall 0.1888 |  precision 0.3294 | f1  0.2126 | ndcg  0.3869 | mrr  0.5998 | have_fake_user 688 | avg_fake_length  5.0000 | all_valid_user_num  688
+2023-02-26 11:15:26.640: [Validation] p_n_score_differences_avg 0.0056 
+2023-02-26 11:15:26.640: ##############################################
+2023-02-26 11:15:47.354: 1
+2023-02-26 11:15:47.355: Epochs   2 topk   5  basket_length <4  num 714  Hit ratio 0.6877 | recall 0.3604 |  precision 0.2417 | f1  0.2620 | ndcg  0.3865 | mrr  0.5449 
+2023-02-26 11:15:47.356: Epochs   2 topk   5  basket_length 4<<6  num 1189  Hit ratio 0.7040 | recall 0.2674 |  precision 0.2834 | f1  0.2526 | ndcg  0.3649 | mrr  0.5738 
+2023-02-26 11:15:47.358: Epochs   2 topk   5  basket_length >6  num 4295  Hit ratio 0.8645 | recall 0.2196 |  precision 0.4503 | f1  0.2741 | ndcg  0.5021 | mrr  0.7355 
+2023-02-26 11:15:47.359: ...............................................
+2023-02-26 11:15:47.359: neg_sample TOP5 [Test]| Epochs   2 | Hit ratio 0.8133 | recall 0.2450 |  precision 0.3943 | f1  0.2686 | ndcg  0.4624 | mrr  0.6825| have_fake_user 6198 | avg_fake_length  5.0000 | all_test_user_num  6198
+2023-02-26 11:15:47.359: ##############################################
+2023-02-26 11:15:47.461: Save model as ./runs/base_model_Instacart_basemodel.pt
+2023-02-26 11:15:47.505: Save model as ./runs/model_1_Instacart_basemodel.pt
+2023-02-26 11:15:47.505: Epochs   2 best_hit 0.8133 best_recall 0.2450 best_precision 0.3943 best_f1 0.2686 best_ndcg 0.4624  best_mrr 0.6825 
+2023-02-26 11:15:47.505: Epochs   2 loss_all 6.9094 Hit ratio 0.8133 recall 0.2450 precision 0.3943 f1  0.2686 ndcg  0.4624 mrr  0.6825 avg_fake_length 5.0000
+2023-02-26 11:15:47.507: G1_flag 0 pretrain 0 temp 1 train_epoch 0  B 256 al_batch 1000 lr 0.001  temp0 0.3
+2023-02-26 11:15:47.682: [Training]| Epochs   3 | Batch     0  | ms/batch 0.00 | Loss 6.9472 | p1_Loss 6.9472 | p2_Loss 6.9472 | p3_Loss 6.9472 | p4_Loss 6.9472 | 
+2023-02-26 11:15:47.682: real_rest_sum 10356.0000 | real_rest_sum_int 10356.0000 | all_sum 10356.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:16:07.638: [Training]| Epochs   3 | Batch   500  | ms/batch 0.04 | Loss 6.5274 | p1_Loss 6.5274 | p2_Loss 6.5274 | p3_Loss 6.5274 | p4_Loss 6.5274 | 
+2023-02-26 11:16:07.638: real_rest_sum 96354.0000 | real_rest_sum_int 96354.0000 | all_sum 96354.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:16:27.183: [Training]| Epochs   3 | Batch  1000  | ms/batch 0.04 | Loss 7.1375 | p1_Loss 7.1375 | p2_Loss 7.1375 | p3_Loss 7.1375 | p4_Loss 7.1375 | 
+2023-02-26 11:16:27.183: real_rest_sum 3177.0000 | real_rest_sum_int 3177.0000 | all_sum 3177.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:16:46.939: [Training]| Epochs   3 | Batch  1500  | ms/batch 0.04 | Loss 6.5199 | p1_Loss 6.5199 | p2_Loss 6.5199 | p3_Loss 6.5199 | p4_Loss 6.5199 | 
+2023-02-26 11:16:46.939: real_rest_sum 37240.0000 | real_rest_sum_int 37240.0000 | all_sum 37240.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:17:07.259: [Training]| Epochs   3 | Batch  2000  | ms/batch 0.04 | Loss 6.8827 | p1_Loss 6.8827 | p2_Loss 6.8827 | p3_Loss 6.8827 | p4_Loss 6.8827 | 
+2023-02-26 11:17:07.259: real_rest_sum 9194.0000 | real_rest_sum_int 9194.0000 | all_sum 9194.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:17:27.517: [Training]| Epochs   3 | Batch  2500  | ms/batch 0.04 | Loss 6.1146 | p1_Loss 6.1146 | p2_Loss 6.1146 | p3_Loss 6.1146 | p4_Loss 6.1146 | 
+2023-02-26 11:17:27.517: real_rest_sum 29403.0000 | real_rest_sum_int 29403.0000 | all_sum 29403.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:17:31.417: batch_num: 2598
+2023-02-26 11:17:31.417: [Training]| Epochs   3 | loss_all  6.5202 | p1_all  6.5202 | p2_all  6.5202 | p3_all  6.5202 | p4_all  6.5202 | real_rest_ratio 1.0000 | repeat_ratio 1.0000 |
+2023-02-26 11:17:41.013: 1
+2023-02-26 11:17:41.014: valid_real_ratio_avg 1.0000 valid_neg_ratio_avg 1.0000 valid_repeat_ratio_avg 1.0000 valid_neg_repeat_ratio_avg 1.0000
+2023-02-26 11:17:41.014: [Validation] neg_sample TOP5 [Test]| Epochs   3 | Hit ratio 0.7456 | recall 0.1914 |  precision 0.3320 | f1  0.2144 | ndcg  0.3972 | mrr  0.6235 | have_fake_user 688 | avg_fake_length  5.0000 | all_valid_user_num  688
+2023-02-26 11:17:41.014: [Validation] p_n_score_differences_avg 0.0055 
+2023-02-26 11:17:41.014: ##############################################
+2023-02-26 11:18:02.018: 1
+2023-02-26 11:18:02.018: Epochs   3 topk   5  basket_length <4  num 714  Hit ratio 0.7115 | recall 0.3934 |  precision 0.2585 | f1  0.2828 | ndcg  0.4276 | mrr  0.5882 
+2023-02-26 11:18:02.019: Epochs   3 topk   5  basket_length 4<<6  num 1189  Hit ratio 0.7393 | recall 0.2926 |  precision 0.3058 | f1  0.2734 | ndcg  0.3984 | mrr  0.6156 
+2023-02-26 11:18:02.022: Epochs   3 topk   5  basket_length >6  num 4295  Hit ratio 0.8785 | recall 0.2393 |  precision 0.4848 | f1  0.2968 | ndcg  0.5373 | mrr  0.7600 
+2023-02-26 11:18:02.022: ...............................................
+2023-02-26 11:18:02.022: neg_sample TOP5 [Test]| Epochs   3 | Hit ratio 0.8325 | recall 0.2673 |  precision 0.4244 | f1  0.2907 | ndcg  0.4980 | mrr  0.7125| have_fake_user 6198 | avg_fake_length  5.0000 | all_test_user_num  6198
+2023-02-26 11:18:02.022: ##############################################
+2023-02-26 11:18:02.101: Save model as ./runs/base_model_Instacart_basemodel.pt
+2023-02-26 11:18:02.175: Save model as ./runs/model_1_Instacart_basemodel.pt
+2023-02-26 11:18:02.175: Epochs   3 best_hit 0.8325 best_recall 0.2673 best_precision 0.4244 best_f1 0.2907 best_ndcg 0.4980  best_mrr 0.7125 
+2023-02-26 11:18:02.175: Epochs   3 loss_all 6.5202 Hit ratio 0.8325 recall 0.2673 precision 0.4244 f1  0.2907 ndcg  0.4980 mrr  0.7125 avg_fake_length 5.0000
+2023-02-26 11:18:02.176: G1_flag 0 pretrain 0 temp 1 train_epoch 0  B 256 al_batch 1000 lr 0.001  temp0 0.3
+2023-02-26 11:18:02.387: [Training]| Epochs   4 | Batch     0  | ms/batch 0.00 | Loss 5.7969 | p1_Loss 5.7969 | p2_Loss 5.7969 | p3_Loss 5.7969 | p4_Loss 5.7969 | 
+2023-02-26 11:18:02.387: real_rest_sum 46191.0000 | real_rest_sum_int 46191.0000 | all_sum 46191.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:18:18.088: [Training]| Epochs   4 | Batch   500  | ms/batch 0.03 | Loss 6.2924 | p1_Loss 6.2924 | p2_Loss 6.2924 | p3_Loss 6.2924 | p4_Loss 6.2924 | 
+2023-02-26 11:18:18.088: real_rest_sum 7179.0000 | real_rest_sum_int 7179.0000 | all_sum 7179.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:18:38.330: [Training]| Epochs   4 | Batch  1000  | ms/batch 0.04 | Loss 6.5865 | p1_Loss 6.5865 | p2_Loss 6.5865 | p3_Loss 6.5865 | p4_Loss 6.5865 | 
+2023-02-26 11:18:38.330: real_rest_sum 13937.0000 | real_rest_sum_int 13937.0000 | all_sum 13937.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:18:59.039: [Training]| Epochs   4 | Batch  1500  | ms/batch 0.04 | Loss 7.0670 | p1_Loss 7.0670 | p2_Loss 7.0670 | p3_Loss 7.0670 | p4_Loss 7.0670 | 
+2023-02-26 11:18:59.039: real_rest_sum 2963.0000 | real_rest_sum_int 2963.0000 | all_sum 2963.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:19:19.033: [Training]| Epochs   4 | Batch  2000  | ms/batch 0.04 | Loss 6.7633 | p1_Loss 6.7633 | p2_Loss 6.7633 | p3_Loss 6.7633 | p4_Loss 6.7633 | 
+2023-02-26 11:19:19.033: real_rest_sum 13802.0000 | real_rest_sum_int 13802.0000 | all_sum 13802.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:19:38.347: [Training]| Epochs   4 | Batch  2500  | ms/batch 0.04 | Loss 6.4189 | p1_Loss 6.4189 | p2_Loss 6.4189 | p3_Loss 6.4189 | p4_Loss 6.4189 | 
+2023-02-26 11:19:38.347: real_rest_sum 6280.0000 | real_rest_sum_int 6280.0000 | all_sum 6280.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:19:42.188: batch_num: 2598
+2023-02-26 11:19:42.189: [Training]| Epochs   4 | loss_all  6.2429 | p1_all  6.2429 | p2_all  6.2429 | p3_all  6.2429 | p4_all  6.2429 | real_rest_ratio 1.0000 | repeat_ratio 1.0000 |
+2023-02-26 11:19:51.723: 1
+2023-02-26 11:19:51.724: valid_real_ratio_avg 1.0000 valid_neg_ratio_avg 1.0000 valid_repeat_ratio_avg 1.0000 valid_neg_repeat_ratio_avg 1.0000
+2023-02-26 11:19:51.724: [Validation] neg_sample TOP5 [Test]| Epochs   4 | Hit ratio 0.7558 | recall 0.1914 |  precision 0.3291 | f1  0.2134 | ndcg  0.3932 | mrr  0.6232 | have_fake_user 688 | avg_fake_length  5.0000 | all_valid_user_num  688
+2023-02-26 11:19:51.724: [Validation] p_n_score_differences_avg 0.0062 
+2023-02-26 11:19:51.724: ##############################################
+2023-02-26 11:20:12.555: 1
+2023-02-26 11:20:12.555: Epochs   4 topk   5  basket_length <4  num 714  Hit ratio 0.7185 | recall 0.4119 |  precision 0.2725 | f1  0.2985 | ndcg  0.4421 | mrr  0.5963 
+2023-02-26 11:20:12.556: Epochs   4 topk   5  basket_length 4<<6  num 1189  Hit ratio 0.7527 | recall 0.3105 |  precision 0.3262 | f1  0.2922 | ndcg  0.4198 | mrr  0.6323 
+2023-02-26 11:20:12.559: Epochs   4 topk   5  basket_length >6  num 4295  Hit ratio 0.8915 | recall 0.2531 |  precision 0.5090 | f1  0.3132 | ndcg  0.5593 | mrr  0.7726 
+2023-02-26 11:20:12.559: ...............................................
+2023-02-26 11:20:12.559: neg_sample TOP5 [Test]| Epochs   4 | Hit ratio 0.8449 | recall 0.2824 |  precision 0.4467 | f1  0.3075 | ndcg  0.5191 | mrr  0.7254| have_fake_user 6198 | avg_fake_length  5.0000 | all_test_user_num  6198
+2023-02-26 11:20:12.559: ##############################################
+2023-02-26 11:20:12.652: Save model as ./runs/base_model_Instacart_basemodel.pt
+2023-02-26 11:20:12.787: Save model as ./runs/model_1_Instacart_basemodel.pt
+2023-02-26 11:20:12.787: Epochs   4 best_hit 0.8449 best_recall 0.2824 best_precision 0.4467 best_f1 0.3075 best_ndcg 0.5191  best_mrr 0.7254 
+2023-02-26 11:20:12.788: Epochs   4 loss_all 6.2429 Hit ratio 0.8449 recall 0.2824 precision 0.4467 f1  0.3075 ndcg  0.5191 mrr  0.7254 avg_fake_length 5.0000
+2023-02-26 11:20:12.789: G1_flag 0 pretrain 0 temp 1 train_epoch 0  B 256 al_batch 1000 lr 0.001  temp0 0.3
+2023-02-26 11:20:12.984: [Training]| Epochs   5 | Batch     0  | ms/batch 0.00 | Loss 5.8351 | p1_Loss 5.8351 | p2_Loss 5.8351 | p3_Loss 5.8351 | p4_Loss 5.8351 | 
+2023-02-26 11:20:12.984: real_rest_sum 65974.0000 | real_rest_sum_int 65974.0000 | all_sum 65974.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:20:33.587: [Training]| Epochs   5 | Batch   500  | ms/batch 0.04 | Loss 6.1689 | p1_Loss 6.1689 | p2_Loss 6.1689 | p3_Loss 6.1689 | p4_Loss 6.1689 | 
+2023-02-26 11:20:33.587: real_rest_sum 13962.0000 | real_rest_sum_int 13962.0000 | all_sum 13962.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:20:53.003: [Training]| Epochs   5 | Batch  1000  | ms/batch 0.04 | Loss 6.3074 | p1_Loss 6.3074 | p2_Loss 6.3074 | p3_Loss 6.3074 | p4_Loss 6.3074 | 
+2023-02-26 11:20:53.003: real_rest_sum 9293.0000 | real_rest_sum_int 9293.0000 | all_sum 9293.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:21:12.493: [Training]| Epochs   5 | Batch  1500  | ms/batch 0.04 | Loss 6.0062 | p1_Loss 6.0062 | p2_Loss 6.0062 | p3_Loss 6.0062 | p4_Loss 6.0062 | 
+2023-02-26 11:21:12.493: real_rest_sum 20871.0000 | real_rest_sum_int 20871.0000 | all_sum 20871.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:21:33.124: [Training]| Epochs   5 | Batch  2000  | ms/batch 0.04 | Loss 5.8566 | p1_Loss 5.8566 | p2_Loss 5.8566 | p3_Loss 5.8566 | p4_Loss 5.8566 | 
+2023-02-26 11:21:33.124: real_rest_sum 27239.0000 | real_rest_sum_int 27239.0000 | all_sum 27239.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:21:53.012: [Training]| Epochs   5 | Batch  2500  | ms/batch 0.04 | Loss 6.6149 | p1_Loss 6.6149 | p2_Loss 6.6149 | p3_Loss 6.6149 | p4_Loss 6.6149 | 
+2023-02-26 11:21:53.012: real_rest_sum 4121.0000 | real_rest_sum_int 4121.0000 | all_sum 4121.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:21:56.868: batch_num: 2598
+2023-02-26 11:21:56.868: [Training]| Epochs   5 | loss_all  6.0603 | p1_all  6.0603 | p2_all  6.0603 | p3_all  6.0603 | p4_all  6.0603 | real_rest_ratio 1.0000 | repeat_ratio 1.0000 |
+2023-02-26 11:22:06.404: 1
+2023-02-26 11:22:06.405: valid_real_ratio_avg 1.0000 valid_neg_ratio_avg 1.0000 valid_repeat_ratio_avg 1.0000 valid_neg_repeat_ratio_avg 1.0000
+2023-02-26 11:22:06.405: [Validation] neg_sample TOP5 [Test]| Epochs   5 | Hit ratio 0.7529 | recall 0.1894 |  precision 0.3221 | f1  0.2104 | ndcg  0.3842 | mrr  0.6091 | have_fake_user 688 | avg_fake_length  5.0000 | all_valid_user_num  688
+2023-02-26 11:22:06.405: [Validation] p_n_score_differences_avg 0.0061 
+2023-02-26 11:22:06.405: ##############################################
+2023-02-26 11:22:06.407: G1_flag 0 pretrain 0 temp 1 train_epoch 0  B 256 al_batch 1000 lr 0.001  temp0 0.3
+2023-02-26 11:22:06.646: [Training]| Epochs   6 | Batch     0  | ms/batch 0.00 | Loss 5.7017 | p1_Loss 5.7017 | p2_Loss 5.7017 | p3_Loss 5.7017 | p4_Loss 5.7017 | 
+2023-02-26 11:22:06.646: real_rest_sum 38343.0000 | real_rest_sum_int 38343.0000 | all_sum 38343.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:22:26.950: [Training]| Epochs   6 | Batch   500  | ms/batch 0.04 | Loss 5.8021 | p1_Loss 5.8021 | p2_Loss 5.8021 | p3_Loss 5.8021 | p4_Loss 5.8021 | 
+2023-02-26 11:22:26.950: real_rest_sum 79486.0000 | real_rest_sum_int 79486.0000 | all_sum 79486.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:22:46.766: [Training]| Epochs   6 | Batch  1000  | ms/batch 0.04 | Loss 5.7449 | p1_Loss 5.7449 | p2_Loss 5.7449 | p3_Loss 5.7449 | p4_Loss 5.7449 | 
+2023-02-26 11:22:46.766: real_rest_sum 33340.0000 | real_rest_sum_int 33340.0000 | all_sum 33340.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:23:07.101: [Training]| Epochs   6 | Batch  1500  | ms/batch 0.04 | Loss 5.9414 | p1_Loss 5.9414 | p2_Loss 5.9414 | p3_Loss 5.9414 | p4_Loss 5.9414 | 
+2023-02-26 11:23:07.101: real_rest_sum 30421.0000 | real_rest_sum_int 30421.0000 | all_sum 30421.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:23:26.541: [Training]| Epochs   6 | Batch  2000  | ms/batch 0.04 | Loss 6.5495 | p1_Loss 6.5495 | p2_Loss 6.5495 | p3_Loss 6.5495 | p4_Loss 6.5495 | 
+2023-02-26 11:23:26.541: real_rest_sum 9673.0000 | real_rest_sum_int 9673.0000 | all_sum 9673.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:23:41.839: [Training]| Epochs   6 | Batch  2500  | ms/batch 0.03 | Loss 6.9224 | p1_Loss 6.9224 | p2_Loss 6.9224 | p3_Loss 6.9224 | p4_Loss 6.9224 | 
+2023-02-26 11:23:41.839: real_rest_sum 2869.0000 | real_rest_sum_int 2869.0000 | all_sum 2869.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:23:45.672: batch_num: 2598
+2023-02-26 11:23:45.672: [Training]| Epochs   6 | loss_all  5.9198 | p1_all  5.9198 | p2_all  5.9198 | p3_all  5.9198 | p4_all  5.9198 | real_rest_ratio 1.0000 | repeat_ratio 1.0000 |
+2023-02-26 11:23:55.249: 1
+2023-02-26 11:23:55.250: valid_real_ratio_avg 1.0000 valid_neg_ratio_avg 1.0000 valid_repeat_ratio_avg 1.0000 valid_neg_repeat_ratio_avg 1.0000
+2023-02-26 11:23:55.250: [Validation] neg_sample TOP5 [Test]| Epochs   6 | Hit ratio 0.7660 | recall 0.1918 |  precision 0.3294 | f1  0.2130 | ndcg  0.3957 | mrr  0.6347 | have_fake_user 688 | avg_fake_length  5.0000 | all_valid_user_num  688
+2023-02-26 11:23:55.250: [Validation] p_n_score_differences_avg 0.0066 
+2023-02-26 11:23:55.250: ##############################################
+2023-02-26 11:24:16.163: 1
+2023-02-26 11:24:16.163: Epochs   6 topk   5  basket_length <4  num 714  Hit ratio 0.7297 | recall 0.4267 |  precision 0.2768 | f1  0.3054 | ndcg  0.4594 | mrr  0.6115 
+2023-02-26 11:24:16.164: Epochs   6 topk   5  basket_length 4<<6  num 1189  Hit ratio 0.7712 | recall 0.3253 |  precision 0.3376 | f1  0.3040 | ndcg  0.4314 | mrr  0.6374 
+2023-02-26 11:24:16.167: Epochs   6 topk   5  basket_length >6  num 4295  Hit ratio 0.9031 | recall 0.2653 |  precision 0.5295 | f1  0.3271 | ndcg  0.5786 | mrr  0.7852 
+2023-02-26 11:24:16.167: ...............................................
+2023-02-26 11:24:16.167: neg_sample TOP5 [Test]| Epochs   6 | Hit ratio 0.8579 | recall 0.2954 |  precision 0.4635 | f1  0.3202 | ndcg  0.5366 | mrr  0.7368| have_fake_user 6198 | avg_fake_length  5.0000 | all_test_user_num  6198
+2023-02-26 11:24:16.167: ##############################################
+2023-02-26 11:24:16.223: Save model as ./runs/base_model_Instacart_basemodel.pt
+2023-02-26 11:24:16.343: Save model as ./runs/model_1_Instacart_basemodel.pt
+2023-02-26 11:24:16.343: Epochs   6 best_hit 0.8579 best_recall 0.2954 best_precision 0.4635 best_f1 0.3202 best_ndcg 0.5366  best_mrr 0.7368 
+2023-02-26 11:24:16.343: Epochs   6 loss_all 5.9198 Hit ratio 0.8579 recall 0.2954 precision 0.4635 f1  0.3202 ndcg  0.5366 mrr  0.7368 avg_fake_length 5.0000
+2023-02-26 11:24:16.345: G1_flag 0 pretrain 0 temp 1 train_epoch 0  B 256 al_batch 1000 lr 0.001  temp0 0.3
+2023-02-26 11:24:16.494: [Training]| Epochs   7 | Batch     0  | ms/batch 0.00 | Loss 6.4149 | p1_Loss 6.4149 | p2_Loss 6.4149 | p3_Loss 6.4149 | p4_Loss 6.4149 | 
+2023-02-26 11:24:16.494: real_rest_sum 5531.0000 | real_rest_sum_int 5531.0000 | all_sum 5531.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:24:36.274: [Training]| Epochs   7 | Batch   500  | ms/batch 0.04 | Loss 6.4754 | p1_Loss 6.4754 | p2_Loss 6.4754 | p3_Loss 6.4754 | p4_Loss 6.4754 | 
+2023-02-26 11:24:36.274: real_rest_sum 2383.0000 | real_rest_sum_int 2383.0000 | all_sum 2383.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:24:56.441: [Training]| Epochs   7 | Batch  1000  | ms/batch 0.04 | Loss 5.4260 | p1_Loss 5.4260 | p2_Loss 5.4260 | p3_Loss 5.4260 | p4_Loss 5.4260 | 
+2023-02-26 11:24:56.441: real_rest_sum 54275.0000 | real_rest_sum_int 54275.0000 | all_sum 54275.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:25:16.239: [Training]| Epochs   7 | Batch  1500  | ms/batch 0.04 | Loss 5.5005 | p1_Loss 5.5005 | p2_Loss 5.5005 | p3_Loss 5.5005 | p4_Loss 5.5005 | 
+2023-02-26 11:25:16.239: real_rest_sum 49500.0000 | real_rest_sum_int 49500.0000 | all_sum 49500.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:25:32.047: [Training]| Epochs   7 | Batch  2000  | ms/batch 0.03 | Loss 5.0837 | p1_Loss 5.0837 | p2_Loss 5.0837 | p3_Loss 5.0837 | p4_Loss 5.0837 | 
+2023-02-26 11:25:32.047: real_rest_sum 28939.0000 | real_rest_sum_int 28939.0000 | all_sum 28939.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:25:52.663: [Training]| Epochs   7 | Batch  2500  | ms/batch 0.04 | Loss 6.0640 | p1_Loss 6.0640 | p2_Loss 6.0640 | p3_Loss 6.0640 | p4_Loss 6.0640 | 
+2023-02-26 11:25:52.664: real_rest_sum 18704.0000 | real_rest_sum_int 18704.0000 | all_sum 18704.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:25:56.393: batch_num: 2598
+2023-02-26 11:25:56.393: [Training]| Epochs   7 | loss_all  5.8195 | p1_all  5.8195 | p2_all  5.8195 | p3_all  5.8195 | p4_all  5.8195 | real_rest_ratio 1.0000 | repeat_ratio 1.0000 |
+2023-02-26 11:26:06.030: 1
+2023-02-26 11:26:06.031: valid_real_ratio_avg 1.0000 valid_neg_ratio_avg 1.0000 valid_repeat_ratio_avg 1.0000 valid_neg_repeat_ratio_avg 1.0000
+2023-02-26 11:26:06.031: [Validation] neg_sample TOP5 [Test]| Epochs   7 | Hit ratio 0.7485 | recall 0.1876 |  precision 0.3256 | f1  0.2092 | ndcg  0.3879 | mrr  0.6098 | have_fake_user 688 | avg_fake_length  5.0000 | all_valid_user_num  688
+2023-02-26 11:26:06.031: [Validation] p_n_score_differences_avg 0.0058 
+2023-02-26 11:26:06.031: ##############################################
+2023-02-26 11:26:06.033: G1_flag 0 pretrain 0 temp 1 train_epoch 0  B 256 al_batch 1000 lr 0.001  temp0 0.3
+2023-02-26 11:26:06.252: [Training]| Epochs   8 | Batch     0  | ms/batch 0.00 | Loss 5.4118 | p1_Loss 5.4118 | p2_Loss 5.4118 | p3_Loss 5.4118 | p4_Loss 5.4118 | 
+2023-02-26 11:26:06.252: real_rest_sum 16782.0000 | real_rest_sum_int 16782.0000 | all_sum 16782.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:26:26.480: [Training]| Epochs   8 | Batch   500  | ms/batch 0.04 | Loss 5.3661 | p1_Loss 5.3661 | p2_Loss 5.3661 | p3_Loss 5.3661 | p4_Loss 5.3661 | 
+2023-02-26 11:26:26.481: real_rest_sum 68960.0000 | real_rest_sum_int 68960.0000 | all_sum 68960.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:26:47.178: [Training]| Epochs   8 | Batch  1000  | ms/batch 0.04 | Loss 5.3543 | p1_Loss 5.3543 | p2_Loss 5.3543 | p3_Loss 5.3543 | p4_Loss 5.3543 | 
+2023-02-26 11:26:47.178: real_rest_sum 35364.0000 | real_rest_sum_int 35364.0000 | all_sum 35364.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:27:06.799: [Training]| Epochs   8 | Batch  1500  | ms/batch 0.04 | Loss 6.0046 | p1_Loss 6.0046 | p2_Loss 6.0046 | p3_Loss 6.0046 | p4_Loss 6.0046 | 
+2023-02-26 11:27:06.799: real_rest_sum 10899.0000 | real_rest_sum_int 10899.0000 | all_sum 10899.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:27:27.165: [Training]| Epochs   8 | Batch  2000  | ms/batch 0.04 | Loss 5.5010 | p1_Loss 5.5010 | p2_Loss 5.5010 | p3_Loss 5.5010 | p4_Loss 5.5010 | 
+2023-02-26 11:27:27.165: real_rest_sum 41086.0000 | real_rest_sum_int 41086.0000 | all_sum 41086.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:27:46.951: [Training]| Epochs   8 | Batch  2500  | ms/batch 0.04 | Loss 6.1622 | p1_Loss 6.1622 | p2_Loss 6.1622 | p3_Loss 6.1622 | p4_Loss 6.1622 | 
+2023-02-26 11:27:46.952: real_rest_sum 9293.0000 | real_rest_sum_int 9293.0000 | all_sum 9293.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:27:50.611: batch_num: 2598
+2023-02-26 11:27:50.611: [Training]| Epochs   8 | loss_all  5.7333 | p1_all  5.7333 | p2_all  5.7333 | p3_all  5.7333 | p4_all  5.7333 | real_rest_ratio 1.0000 | repeat_ratio 1.0000 |
+2023-02-26 11:28:00.228: 1
+2023-02-26 11:28:00.229: valid_real_ratio_avg 1.0000 valid_neg_ratio_avg 1.0000 valid_repeat_ratio_avg 1.0000 valid_neg_repeat_ratio_avg 1.0000
+2023-02-26 11:28:00.229: [Validation] neg_sample TOP5 [Test]| Epochs   8 | Hit ratio 0.7529 | recall 0.1868 |  precision 0.3241 | f1  0.2086 | ndcg  0.3830 | mrr  0.5997 | have_fake_user 688 | avg_fake_length  5.0000 | all_valid_user_num  688
+2023-02-26 11:28:00.229: [Validation] p_n_score_differences_avg 0.0053 
+2023-02-26 11:28:00.229: ##############################################
+2023-02-26 11:28:21.012: 1
+2023-02-26 11:28:21.013: Epochs   8 topk   5  basket_length <4  num 714  Hit ratio 0.7521 | recall 0.4413 |  precision 0.2852 | f1  0.3153 | ndcg  0.4696 | mrr  0.6188 
+2023-02-26 11:28:21.014: Epochs   8 topk   5  basket_length 4<<6  num 1189  Hit ratio 0.7738 | recall 0.3408 |  precision 0.3521 | f1  0.3180 | ndcg  0.4520 | mrr  0.6576 
+2023-02-26 11:28:21.017: Epochs   8 topk   5  basket_length >6  num 4295  Hit ratio 0.9085 | recall 0.2743 |  precision 0.5432 | f1  0.3372 | ndcg  0.5928 | mrr  0.7937 
+2023-02-26 11:28:21.017: ...............................................
+2023-02-26 11:28:21.017: neg_sample TOP5 [Test]| Epochs   8 | Hit ratio 0.8646 | recall 0.3063 |  precision 0.4768 | f1  0.3310 | ndcg  0.5516 | mrr  0.7474| have_fake_user 6198 | avg_fake_length  5.0000 | all_test_user_num  6198
+2023-02-26 11:28:21.017: ##############################################
+2023-02-26 11:28:21.125: Save model as ./runs/base_model_Instacart_basemodel.pt
+2023-02-26 11:28:21.303: Save model as ./runs/model_1_Instacart_basemodel.pt
+2023-02-26 11:28:21.304: Epochs   8 best_hit 0.8646 best_recall 0.3063 best_precision 0.4768 best_f1 0.3310 best_ndcg 0.5516  best_mrr 0.7474 
+2023-02-26 11:28:21.304: Epochs   8 loss_all 5.7333 Hit ratio 0.8646 recall 0.3063 precision 0.4768 f1  0.3310 ndcg  0.5516 mrr  0.7474 avg_fake_length 5.0000
+2023-02-26 11:28:21.305: G1_flag 0 pretrain 0 temp 1 train_epoch 0  B 256 al_batch 1000 lr 0.001  temp0 0.3
+2023-02-26 11:28:21.524: [Training]| Epochs   9 | Batch     0  | ms/batch 0.00 | Loss 5.2215 | p1_Loss 5.2215 | p2_Loss 5.2215 | p3_Loss 5.2215 | p4_Loss 5.2215 | 
+2023-02-26 11:28:21.524: real_rest_sum 64906.0000 | real_rest_sum_int 64906.0000 | all_sum 64906.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:28:42.025: [Training]| Epochs   9 | Batch   500  | ms/batch 0.04 | Loss 6.4905 | p1_Loss 6.4905 | p2_Loss 6.4905 | p3_Loss 6.4905 | p4_Loss 6.4905 | 
+2023-02-26 11:28:42.025: real_rest_sum 4719.0000 | real_rest_sum_int 4719.0000 | all_sum 4719.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:29:02.728: [Training]| Epochs   9 | Batch  1000  | ms/batch 0.04 | Loss 5.6152 | p1_Loss 5.6152 | p2_Loss 5.6152 | p3_Loss 5.6152 | p4_Loss 5.6152 | 
+2023-02-26 11:29:02.728: real_rest_sum 73863.0000 | real_rest_sum_int 73863.0000 | all_sum 73863.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:29:22.576: [Training]| Epochs   9 | Batch  1500  | ms/batch 0.04 | Loss 6.2369 | p1_Loss 6.2369 | p2_Loss 6.2369 | p3_Loss 6.2369 | p4_Loss 6.2369 | 
+2023-02-26 11:29:22.576: real_rest_sum 8110.0000 | real_rest_sum_int 8110.0000 | all_sum 8110.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:29:42.554: [Training]| Epochs   9 | Batch  2000  | ms/batch 0.04 | Loss 5.4939 | p1_Loss 5.4939 | p2_Loss 5.4939 | p3_Loss 5.4939 | p4_Loss 5.4939 | 
+2023-02-26 11:29:42.554: real_rest_sum 14544.0000 | real_rest_sum_int 14544.0000 | all_sum 14544.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:30:02.564: [Training]| Epochs   9 | Batch  2500  | ms/batch 0.04 | Loss 5.7643 | p1_Loss 5.7643 | p2_Loss 5.7643 | p3_Loss 5.7643 | p4_Loss 5.7643 | 
+2023-02-26 11:30:02.565: real_rest_sum 37538.0000 | real_rest_sum_int 37538.0000 | all_sum 37538.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:30:06.707: batch_num: 2598
+2023-02-26 11:30:06.707: [Training]| Epochs   9 | loss_all  5.6787 | p1_all  5.6787 | p2_all  5.6787 | p3_all  5.6787 | p4_all  5.6787 | real_rest_ratio 1.0000 | repeat_ratio 1.0000 |
+2023-02-26 11:30:16.353: 1
+2023-02-26 11:30:16.354: valid_real_ratio_avg 1.0000 valid_neg_ratio_avg 1.0000 valid_repeat_ratio_avg 1.0000 valid_neg_repeat_ratio_avg 1.0000
+2023-02-26 11:30:16.354: [Validation] neg_sample TOP5 [Test]| Epochs   9 | Hit ratio 0.7544 | recall 0.1897 |  precision 0.3247 | f1  0.2103 | ndcg  0.3874 | mrr  0.6139 | have_fake_user 688 | avg_fake_length  5.0000 | all_valid_user_num  688
+2023-02-26 11:30:16.354: [Validation] p_n_score_differences_avg 0.0064 
+2023-02-26 11:30:16.354: ##############################################
+2023-02-26 11:30:16.356: G1_flag 0 pretrain 0 temp 1 train_epoch 0  B 256 al_batch 1000 lr 0.001  temp0 0.3
+2023-02-26 11:30:16.520: [Training]| Epochs  10 | Batch     0  | ms/batch 0.00 | Loss 5.9076 | p1_Loss 5.9076 | p2_Loss 5.9076 | p3_Loss 5.9076 | p4_Loss 5.9076 | 
+2023-02-26 11:30:16.520: real_rest_sum 8524.0000 | real_rest_sum_int 8524.0000 | all_sum 8524.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:30:36.445: [Training]| Epochs  10 | Batch   500  | ms/batch 0.04 | Loss 6.3747 | p1_Loss 6.3747 | p2_Loss 6.3747 | p3_Loss 6.3747 | p4_Loss 6.3747 | 
+2023-02-26 11:30:36.445: real_rest_sum 3074.0000 | real_rest_sum_int 3074.0000 | all_sum 3074.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:30:51.815: [Training]| Epochs  10 | Batch  1000  | ms/batch 0.03 | Loss 5.4047 | p1_Loss 5.4047 | p2_Loss 5.4047 | p3_Loss 5.4047 | p4_Loss 5.4047 | 
+2023-02-26 11:30:51.815: real_rest_sum 53883.0000 | real_rest_sum_int 53883.0000 | all_sum 53883.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:31:11.585: [Training]| Epochs  10 | Batch  1500  | ms/batch 0.04 | Loss 5.6324 | p1_Loss 5.6324 | p2_Loss 5.6324 | p3_Loss 5.6324 | p4_Loss 5.6324 | 
+2023-02-26 11:31:11.585: real_rest_sum 22620.0000 | real_rest_sum_int 22620.0000 | all_sum 22620.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:31:32.210: [Training]| Epochs  10 | Batch  2000  | ms/batch 0.04 | Loss 5.6175 | p1_Loss 5.6175 | p2_Loss 5.6175 | p3_Loss 5.6175 | p4_Loss 5.6175 | 
+2023-02-26 11:31:32.211: real_rest_sum 33128.0000 | real_rest_sum_int 33128.0000 | all_sum 33128.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:31:52.850: [Training]| Epochs  10 | Batch  2500  | ms/batch 0.04 | Loss 5.3912 | p1_Loss 5.3912 | p2_Loss 5.3912 | p3_Loss 5.3912 | p4_Loss 5.3912 | 
+2023-02-26 11:31:52.851: real_rest_sum 36859.0000 | real_rest_sum_int 36859.0000 | all_sum 36859.0000 | rest_ratio 1.0000 | repeat_ratio 1.0000
+2023-02-26 11:31:56.841: batch_num: 2598
+2023-02-26 11:31:56.841: [Training]| Epochs  10 | loss_all  5.6199 | p1_all  5.6199 | p2_all  5.6199 | p3_all  5.6199 | p4_all  5.6199 | real_rest_ratio 1.0000 | repeat_ratio 1.0000 |
+2023-02-26 11:32:06.439: 1
+2023-02-26 11:32:06.440: valid_real_ratio_avg 1.0000 valid_neg_ratio_avg 1.0000 valid_repeat_ratio_avg 1.0000 valid_neg_repeat_ratio_avg 1.0000
+2023-02-26 11:32:06.440: [Validation] neg_sample TOP5 [Test]| Epochs  10 | Hit ratio 0.7413 | recall 0.1838 |  precision 0.3125 | f1  0.2027 | ndcg  0.3724 | mrr  0.5901 | have_fake_user 688 | avg_fake_length  5.0000 | all_valid_user_num  688
+2023-02-26 11:32:06.440: [Validation] p_n_score_differences_avg 0.0057 
+2023-02-26 11:32:06.440: ##############################################
+2023-02-26 11:32:27.429: 1
+2023-02-26 11:32:27.430: Epochs  10 topk   5  basket_length <4  num 714  Hit ratio 0.7591 | recall 0.4535 |  precision 0.2936 | f1  0.3239 | ndcg  0.4779 | mrr  0.6266 
+2023-02-26 11:32:27.431: Epochs  10 topk   5  basket_length 4<<6  num 1189  Hit ratio 0.7822 | recall 0.3500 |  precision 0.3600 | f1  0.3253 | ndcg  0.4576 | mrr  0.6534 
+2023-02-26 11:32:27.433: Epochs  10 topk   5  basket_length >6  num 4295  Hit ratio 0.9076 | recall 0.2773 |  precision 0.5469 | f1  0.3401 | ndcg  0.5951 | mrr  0.7909 
+2023-02-26 11:32:27.434: ...............................................
+2023-02-26 11:32:27.434: neg_sample TOP5 [Test]| Epochs  10 | Hit ratio 0.8664 | recall 0.3115 |  precision 0.4818 | f1  0.3354 | ndcg  0.5552 | mrr  0.7456| have_fake_user 6198 | avg_fake_length  5.0000 | all_test_user_num  6198
+2023-02-26 11:32:27.434: ##############################################
+2023-02-26 11:32:27.538: Save model as ./runs/base_model_Instacart_basemodel.pt
+2023-02-26 11:32:27.642: Save model as ./runs/model_1_Instacart_basemodel.pt
+2023-02-26 11:32:27.642: Epochs  10 best_hit 0.8664 best_recall 0.3115 best_precision 0.4818 best_f1 0.3354 best_ndcg 0.5552  best_mrr 0.7474 
+2023-02-26 11:32:27.642: Epochs  10 loss_all 5.6199 Hit ratio 0.8664 recall 0.3115 precision 0.4818 f1  0.3354 ndcg  0.5552 mrr  0.7456 avg_fake_length 5.0000
+2023-02-26 11:32:27.643: valid_hit [0.7354651162790697, 0.7412790697674418, 0.7456395348837209, 0.7558139534883721, 0.752906976744186, 0.7659883720930233, 0.748546511627907, 0.752906976744186, 0.7543604651162791, 0.7412790697674418]
+2023-02-26 11:32:27.643: valid_recall [0.1827855545951147, 0.1887731634074399, 0.19140089474781072, 0.1914141636766765, 0.18940361776938833, 0.19177647709138376, 0.18764910153235187, 0.18682551965731428, 0.1897095095435963, 0.1838396766042567]
+2023-02-26 11:32:27.643: test_hit [0.7666989351403679, 0.8133268796385931, 0.8325266214908035, 0.8449499838657631, 0.8578573733462407, 0.8646337528234914, 0.8664085188770572]
+2023-02-26 11:32:27.643: test_hit [0.20585312260325653, 0.24498633678471227, 0.2673019344532681, 0.28240586120351363, 0.2954073074417121, 0.30629877249770726, 0.31152079035056884]
+2023-02-26 11:32:27.643: train_loss [7.5414303255778625, 6.909448822064066, 6.520174340342814, 6.24286196854043, 6.06033210225799, 5.919783176322273, 5.8194815035137974, 5.7333386730835745, 5.678712452072837, 5.619899819225784]

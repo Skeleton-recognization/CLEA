@@ -58,10 +58,12 @@ class NBModel(nn.Module):  #
 
         self.sd5 = sd2
 
-        self.G1_flag = G1flag
-        self.pretrain = pretrain
+        self.G1_flag = G1flag       # stage1: 0 ; stage2: 1
+        self.pretrain = pretrain    # stage1: 0 ; stage2: 1
         # input_embeddings = self.embed(input_seq_tensor + 1)  # K * B * H
         # target_embedding = self.embed(tar_b_tensor + 1)  # K * H
+
+        # Figure out how to make uid, input_seq_tensor, tar_b_tensor corresponding to skeleton-data.
 
         mask = torch.ones_like(input_seq_tensor,dtype = torch.float).to(self.device)
         mask[input_seq_tensor == -1] = 0
@@ -76,15 +78,17 @@ class NBModel(nn.Module):  #
 
         test = 1
         if train == True:
+            # stage1 enter.
             test = 0
         # print(self.embed.weight.data)
         if ((self.G1_flag == 0) & (pretrain == 0)):  #
-            #
+            # stage1 enter; stage2 can't enter.
             self.filter_basket = torch.ones_like(input_seq_tensor,dtype = torch.float).to(self.device)  # K * B
             real_generate_embedding1 = self.G2(self.filter_basket, input_seq_tensor,uid)  # K*H
             fake_discr = self.D(real_generate_embedding1, history, tar_b_tensor)  # K*n_items
 
             if train == True:
+                # stage1 enter.
                 all_sum = mask.sum()
 
                 loss, (p1, p2, p3, p4) = self.loss2_G1flag0(fake_discr, tar_b_tensor)
@@ -94,6 +98,7 @@ class NBModel(nn.Module):  #
             fake_discr = torch.softmax(fake_discr, dim=-1)
             return mask.sum() / mask.sum(),mask0.sum() / mask0.sum(), fake_discr
         else:
+            # stage2 enter.
             self.filter_basket, test_basket = self.G0(input_seq_tensor, T, tar_b_tensor, self.G1_flag,test,input_embeddings,target_embedding)  # K * B
             real_generate_embedding1 = self.G2(self.filter_basket[:, :, 0], input_seq_tensor,uid)
             fake_discr = self.D(real_generate_embedding1, history, tar_b_tensor, input_seq_tensor)  # K*n_items
@@ -117,6 +122,7 @@ class NBModel(nn.Module):  #
                 rest_generate_embedding1 = self.G2(self.filter_basket[:, :, 1], input_seq_tensor,uid)
                 rest_discr = self.D(rest_generate_embedding1, history, tar_b_tensor, input_seq_tensor)
 
+                # the positive basket filtered and the negative basket filtered.
                 filter_pos = mask * self.filter_basket[:, :, 0]
                 filter_neg = mask * self.filter_basket[:, :, 1]
                 # if ((self.sd5 == 10000)&(self.G1_flag == 1)):
@@ -261,6 +267,7 @@ class Generator1(nn.Module):
             target_embedding = self.embed(target_tensor + 1)
             input_embeddings = self.embed(input_seq_tensor + 1)
 
+        # x_j vector concatenates x_c
         in_tar = torch.cat(
             (input_embeddings, target_embedding.view(target_embedding.size(0), 1, -1).expand_as(input_embeddings)),
             dim=2)  # K*B*2H
