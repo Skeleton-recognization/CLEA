@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2cca04b3-23af-410e-90f5-5717dd9e53a4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Instacart_0.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Instacart_0.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/main_1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/model_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/model_1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/util.py" beforeDir="false" afterPath="$PROJECT_DIR$/module/util.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +89,7 @@
       <option name="presentableId" value="Default" />
       <updated>1676880077553</updated>
       <workItem from="1676880078707" duration="3887000" />
-      <workItem from="1677394881653" duration="37778000" />
+      <workItem from="1677394881653" duration="39607000" />
     </task>
     <servers />
   </component>
